@@ -44,6 +44,7 @@ public class SecondFragment extends Fragment {
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
+        //Himanshu 3
         fragment.setArguments(args);
         return fragment;
     }
