@@ -32,8 +32,13 @@ public class MainActivity extends AppCompatActivity {
         binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                //todo vishalb - Add necessary invocatios and launch new activity
+                Snackbar.make(view, "Action Added", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+                Intent intent = new Intent(this, MainActivity.class);
+                startActivity(intent);
+                finish();
+                //vishalB block ended
             }
         });
         DrawerLayout drawer = binding.drawerLayout;
